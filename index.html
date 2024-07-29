@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual Personagem de Gossip Girl Você é?</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        p {
+            color: #666;
+            font-size: 16px;
+        }
+        button {
+            background-color: #8B0000;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #A52A2A;
+        }
+        #result {
+            margin-top: 20px;
+            display: none;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Qual Personagem de Gossip Girl Você é?</h1>
+        <p>Faça o quiz para descobrir!</p>
+        <button onclick="mostrarResultado()">Iniciar Quiz</button>
+        <div id="result">
+            <h2>Você é Blair Waldorf!</h2>
+            <img src="BF.jpg" alt="Blair Waldorf">
+            <p>Queen B, você é a personificação de estilo e graça.</p>
+        </div>
+        <div class="footer">
+            © 2024 Gossip Girl Quiz
+        </div>
+    </div>
+    <script>
+        function mostrarResultado() {
+            document.getElementById('result').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
